@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katerina Beaulieu, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-document styling in CSS below-->
+    <style>
+        /*in here we must write in CSS*
+
+        /*SELECTING in CSS & Javascript: select/choose specific element (s) on a page for stying or manipulation: :after
+            *by ELEMENT/TAG type       ex: body, div, p
+            *by ID attribute name      ex: #wrapper, #footer
+            *by CLASS attribute name   coming in week 3 v-v
+        */
+
+        div {/*applies to ALL div elements on the page*/
+            border:1px solid pink;
+            padding:10px;
+            margin:5px;
+        }
+
+        #wrapper {/*applies ONLY to the element with an id of "wrapper" */
+            background-color:cornflowerblue;
+        }
+
+        #schools {
+            background-color:darkgray
+        }
+
+        #nav, #footer {
+            background-color: palevioletred
+        }
+
+
+    </style>
+</head>
+<body style="background-color:white">
+    <!--this div holds and "wraps" around all content on the page-->
+    <div id="wrapper">
+        <!--ID names can only be used 1x per page-->
+        <h1> Katerina Beaulieu</h1>
+
+        <!--NAVIGATION BAR-->
+        <div id="nav">
+
+            <!--linking to OUTSIDE pages [not part of our site]-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA!</a>
+            <!--href holds the URL of the site you are linking to-->
+
+            <!--linkning to INTERNAL pages [.html that exists in your current root directory]-->
+            <a href="page2.html">Page 2 </a>
+
+            <!--IN-PAGE linking [jumping to sections of the current page]-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOLING</a>
+            <a href="hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of page</a>
+
+            <!--FRAGMENT LINKS [jumping to a specific point on another page]-->
+        
+
+        </div><!--/ #nav-->
+
+        <!--BIO SECTION-->
+        <div id="my-bio">
+
+            <h2>About Me</h2>
+            <p> fart fart fart fart lololol XD</p>
+
+            <br>
+            <br>
+
+            <!-- REMOTE image link example [image file not in root directory, need to use an absolute path (URL + URI at end)]-->
+            <!--AVOID REMOTE IMAGE LINKS AT ALL COSTS!-->
+            <img src="https://www.vhv.rs/dpng/d/190-1906277_party-clipart-chicken-transparent-farm-animals-clipart-hd.png" alt="Chicken."
+            style="width: 400px;" title="Booga Bogga">
+
+            <!--RELATIVE image link below [image file exists in current root directory]-->
+            <img src="https://i.guim.co.uk/img/media/d12821df14343e2b9a5fcb78a113117048a858e0/492_303_3308_1984/master/3308.jpg?width=620&quality=85&auto=format&fit=max&s=2f8525a5c386bb30bcd59aea63b67c52"
+            style="width:400px;">
+
+            <!--img tag inserts an image; can be relative files (found witin project folder, just need relative address path) or remote files (found elsewhere online, needs full URL address path)-->
+            <!--required attributes:
+                *src provides the path to the image file, either remote or relative
+                *alt provides alternative text for written page display if image link is broken OR for accessibility of screenreaders-->
+
+        </div><!--/ #bio-->
+
+        <!--SCHOOLS SECTION-->
+
+        <div id="schools">
+
+            <h2>Schooling</h2>
+
+            <ol>
+
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+
+            </ol>
+
+        </div>
+
+        <!--HOBBIES SECTION-->
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+
+            <u1>
+
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+
+            </u1>
+
+        </div><!--/ #hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer">
+            <a href="wrapper">Back to top of page</a>
+
+        </div>
+
+    </div>
+</body>
+</html>
