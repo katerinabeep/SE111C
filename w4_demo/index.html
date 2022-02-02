@@ -11,9 +11,9 @@
     <style>
 
         div {
-
+    
             border:1px solid black;
-            padding:10px;
+            padding:50px;
             margin-bottom:10px;
 
         }
@@ -25,34 +25,38 @@
 
         }
 
-        
+        .character {
+
+            border:none;
+
+        }
+
         .button {
+            color: white;
             width:80px;
-            background-color: rgb(231, 230, 229);
+            background-color: rgb(92, 85, 54);
             font-size:20px;
             text-align:center;
             margin-right:20px;
-            text-decoration:none;
+            text-decoration:darkred;
             padding:5px 5px;
             outline:none;
             cursor:pointer;
-            border:none;
-            border-radius:15px;
-            box-shadow:0 9px;
+            border:rgb(248, 199, 176);
+            box-shadow:0 4px rgb(36, 33, 33);
         }
 
-        .button:hover {background-color:pink}
+        .button:hover {background-color:rgb(138, 34, 34)}
+
 
     </style>
 </head>
-<body>
-    <div id="container">
+<body style="background-color: rgb(227, 221, 199)"></body>
+    <div id="container" style="color:rgb(225, 30, 28)">
 
-
-    </div><!--/ #container-->
 
     <div id="header">
-        <h1 style="text-align:center">Empire Records</h1>
+        <h1 style="text-align:center">Texas Chainsaw Massacre</h1>
 
         <h4 style="text-align:center">Open till midnight!</h4>
 
@@ -61,14 +65,15 @@
 
     <div id="nav" style="text-align:center">
 
-        <a href="index.html" style="font-size:25px">ABOUT</a>
-        <a href="cast.html">CAST</a>
-        <a href="review.html">REVIEW</a>
+        <a href="index.html" class="button">ABOUT</a>
+        <a href="cast.html" class="button">CAST</a>
+        <a href="review.html" class="button">REVIEW</a>
 
     </div><!--/ #nav-->
 
     <div id="content" style="text-align:center">
-        <h2>About the movie Empire Records</h2>
+        <h2>About Texas Chainsaw Massacre</h2>
+        <img src="images/tsm-poster.jpg"alt="Movie poster" style="width:250px">
 
 
     </div><!--/ #content-->
@@ -83,6 +88,7 @@
         <!--<img src="images/valid_.png" alt="screenshot of validation for this page"-->
 
     </div><!--/ #footer-->
+</div><!--/ #container-->
     
 </body>
 </html>
