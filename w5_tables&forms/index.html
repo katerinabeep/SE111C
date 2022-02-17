@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katerina Beaulieu">
+    <title>w5_tables&forms</title>
+</head>
+<body>
+
+    <style>
+
+        .body{
+            border:1px solid black;
+            display:table-cell;
+            vertical-align:middle;
+        }
+
+        label{
+            text-align:left;
+        }
+
+        table, th, td{
+            padding:10px;
+            border:1px solid black;
+            border-collapse:collapse;
+            max-width:1000px;
+            margin:auto;
+        }
+
+    </style>
+
+    <h3 style="text-align:center">Katerina's Birthday Party</h3>
+
+    <div class="body" style="text-align:left;">
+
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Your Info</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><!--left column; labels-->
+    
+                            <label for="guardianName">Guardian's Name</label><br>
+    
+                        </td>
+    
+                        <td><!--right column; input-->
+    
+                            <input type="text" id="guardianName" name="guardianName" required>
+    
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>
+    
+                            <label for="childName">Child's Name </label><br>
+    
+                        </td>
+    
+                        <td>
+    
+                            <input type="text" id="childName" name="childName" required>
+    
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>
+    
+                            <label for="email">Phone Number</label>
+    
+                        </td>
+    
+                        <td>
+    
+                            <input type="text" id="email" name="email" required>
+    
+                        </td> 
+                    </tr>
+    
+    
+                    <!--type attribute determines input type-->
+                    <tr>
+                        <td>
+                            <label for="date">Ideal Date</label>
+                        </td>
+    
+                        <td>
+                            <input type="date" id="date" name="date" required>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="time">Start Time</label>
+                        </td>
+
+                        <td>
+                            <input type="time" id="time" name="time" required>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h3>Food</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="restaurant">Pick from the following</label>
+                        </td>
+
+                        <td>
+                            <input type="radio" value="cfa" name="restaurant">Chick-Fil-A<br>
+                            <input type="radio" value="cle" name="restaurant">Chipotle<br>
+                            <input type="radio" value="og" name="restaurant">Olive Garden<br>
+                            <input type="radio" value="ts" name="restaurant">Tropical Smoothie<br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Drink</h3>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="drink">Drink type<br>
+                        </td>
+
+                        <td>
+                            <select name="drink">
+                                <option value="sp">Sprite</option>
+                                <option value="cc">Coca-Cola</option>
+                                <option value="pp">Pepsi</option>
+                                <option value="l">Lemonade</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="size">Drink size</label>
+
+                        </td>
+
+                        <td>
+                            <input type="radio" value="sm" name="size">small<br>
+                            <input type="radio" value="med" name="size">medium<br>
+                            <input type="radio" value="lg" name="size">large<br>
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>
+                            <label for="comments">Additional Comments</label>
+                        </td>
+    
+                        <td>
+                            <textarea id="comments" name="comments" rows=5 cols=20 
+                            placeholder="Your comment here..." maxlength=50></textarea>
+                        </td>
+    
+                    </tr>
+    
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+    
+</body>
+</html>
