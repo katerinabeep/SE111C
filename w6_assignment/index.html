@@ -9,6 +9,30 @@
     <title>W6 | JS Pay Calculator</title>
 </head>
 <body>
+    <script>
+
+        var hourlyPay = prompt (`Hourly pay:`)
+
+        var hoursWorked = prompt(`Hours worked this week:`)
+
+        var grossPay = (hourlyPay * hoursWorked).toFixed(2)
+        
+        console.log(`Gross Pay: $${grossPay}`)
+
+        
+        var tax = 0.20
+        var taxAmount = (tax * grossPay).toFixed(2)
+        console.log(`Tax Amount: $${taxAmount}`)
+
+        var netPay = (grossPay - taxAmount).toFixed(2)
+        console.log(`Net Pay: $${netPay}`)
+
+        alert(`Gross Pay: $${grossPay}
+        \nTax Amount: $${taxAmount}
+        \nNet Pay: $${netPay}`
+        )//alert() CLOSE
+        
+    </script>
     
 </body>
 </html>

@@ -185,9 +185,41 @@
         //Alert user of how much they owe
         alert(`Thank you! Your order will cost $${total}.`)
 
+        //get amount paid
+        var paid = Number(prompt(`How much do you have? Type a number of dollars and cents`))
+
+        //function accepts amount paid and amount owed
+        //function will cast the paid string to a number and return the change
+        function calcChange(_paid, _total)
+        {
+            return _paid - _total
+        }//calcChange() CLOSE
+
+        //get change and set to have 2 decimal points
+        var change = calcChange(paid, total).toFixed(2)
+
+        //check the values of paid to make sure theyve given enough money
+        //function will accept the change as a number
+        //function will return a message as a string
+        function confirmOrder(_change)
+        {
+
+            if(_change <0)
+            {
+                return `Sorry, you don't have enough money.`
 
             }
-        }
+            else
+            {
+                return `Thank you for purchasing a ${item} for ${dining}.\nYour change is $${_change}.`
+            }
+        }//confirmOrder() CLOSE
+
+        //alert user of their order confirmation
+        alert(confirmOrder(change))
+
+        //test to the console
+        console.log(change)
 
         </script>
     
