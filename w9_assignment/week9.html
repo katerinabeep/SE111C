@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	div {
+		text-align:center;
+	}
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+	<h1>Week 9 | Creating Elements</h1>
+	<script type="text/javascript">
+		//Use this Array of objects to complete the assignment.
+		var people =[
+			{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+			{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+			{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+			{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+			{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+			{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+			{first:"Marion", last:"Cobretti", credit:"Cobra" }
+		]
+
+		var body = document.querySelector(`body`)
+
+		console.log(body.parentElement)
+
+		for(let i=0; i < people.length; i++)
+		{
+			var tempDiv = document.createElement(`div`)
+			tempDiv.setAttribute(`id`, String(i))
+			tempDiv.setAttribute(`class`, `border`)
+			
+			for(let key in people[i])
+			{
+				var p = document.createElement(`p`)
+				var text = document.createTextNode(people[i][key])
+				p.appendChild(text)
+				tempDiv.appendChild(p)
+			}
+			console.log(tempDiv)
+			body.appendChild(tempDiv)
+		}
+		
+	</script>
+
+	<div id="0" class="border">
+		<p>Jason</p>
+		<p>Vorhees</p>
+		<p>Friday the 13th</p>
+	</div><!--0-->
+
+	<div id="1" class="border">
+		<p>Freddy</p>
+		<p>Krueger</p>
+		<p>A Nightmare On Elm Street</p>
+	</div><!--1-->
+	
+	<div id="2" class="border">
+		<p>Roger</p>
+		<p>Rabbit</p>
+		<p>Who Framed Roger Rabbit</p>
+	</div><!--2-->
+
+	<div id="3" class="border">
+		<p>Kevin</p>
+		<p>McCallister</p>
+		<p>Home Alone</p>
+	</div><!--3-->
+
+	<div id="4" class="border">
+		<p>Godzilla</p>
+		<p>King of The Monsters</p>
+		<p>Godzilla</p>
+	</div><!--4-->
+
+	<div id="5" class="border">
+		<p>Buzz</p>
+		<p>Lightyear</p>
+		<p>Toy Story</p>
+	</div><!--5-->
+
+	<div id="6" class="border">
+		<p>Marion</p>
+		<p>Cobretti</p>
+		<p>Cobra</p>
+	</div><!--6-->
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true">...</grammarly-desktop-integration>
+
+</html>
